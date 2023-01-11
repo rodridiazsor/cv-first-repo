@@ -180,6 +180,11 @@ img.profile-pic {
 
 .form-container input {
   width: 100%;
+  height: 1.5rem;
+}
+.form-container select {
+  width: 100%;
+  height: 1.5rem;
 }
 
 .form-container #submit:hover {
