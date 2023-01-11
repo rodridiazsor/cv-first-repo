@@ -38,13 +38,13 @@
                             Sortino
                         </h1>
                     </div>
-                    <h2>
+                    <h3>
                         I like solving problems in different areas, driven by my curiosity about how things work.
                         <br><br>
                         I am passionate about data and its power to support any decision-making process.
                         <br><br>
-                        <h2 style="text-align: center" ;> "Numbers can also tell stories"</h2>
-                    </h2>
+                        <h3 style="text-align: center" ;> "Numbers can also tell stories"</h3>
+                    </h3>
                 </div>
             </div>
         </div>
@@ -59,13 +59,13 @@
                 </div>
                 <div class="card-side back">
                     <div>
-                        <h1 class="h1-header">
+                        <h2 class="h1-header">
                             +6 years of work experience in four different industries
                             <br><br>
                             Thousands of SQL lines code written and hundreds of dashboards built
                             <br> <br>
                             I'm good at data analytics, visualizations and leading projects
-                        </h1>
+                        </h2>
                     </div>
                 </div>
             </div>
@@ -105,7 +105,7 @@
                 </div>
                 <div class="card-side back">
                     <div>
-                        <h1 class="h1-header">
+                        <h2 class="h1-header">
                             Do table sports
                             <br><br>
                             Travel as much as I can
@@ -113,14 +113,13 @@
                             Learn new abilities and develop myself
                             <br><br>
                             Do knowledge sharing and spread my passion about data
-                        </H1>
+                        </h2>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- Download info -->
-    <div class="grid-container">
         <!-- First Column Content -->
         <div class="donwload-container">
             <div class="grid-item">
@@ -143,8 +142,42 @@
                     <button class="download-button"> Visit my GitHub </button>
                 </a>
             </div>
+            <div class="grid-item">
+                <div class="leave-details" id="leave-details" style=" display: block;">
+                    <button type="button" class="download-button" id="leave-details-b">Leave your Details</button>
+                </div>
+                <div class="form-container" id="form-container" style=" display: none;"">
+                    <a href="" target="_blank"></a>
+                    <h3>Leave your details</h3>
+                    <form name ="contact" action="#">
+                    <label>Full Name</label>
+                    <br>
+                    <input id="name" type="text" name='name' placeholder="Leave your full name" required />
+                    <br>
+                    <label>E-Mail</label>
+                    <br>
+                    <input id="email" type="email" name="email" placeholder="Leave your Email" required />
+                    <br>
+                    <label for="contact">Reason of contact:</label>
+                    <select name="reason-contact">
+                        <option value="" disabled selected>Select your option</option>
+                        <option value="Job Offer">Job Offer</option>
+                        <option value="Networking">Networking</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <br><br>
+                    <!-- This button is a type=button for testing purposes and be able to show the "thank-you" container when it's "submitted" -->
+                    <button type="button" id="submit">Submit</button>
+                    </form>
+                </div>
+                <div class = "greetings" id="thank-you" style=" display: none;">
+                    <p>Thank you! I'll contact you ASAP
+                    <br>
+                    (The submitted form would send a POST request ideally)
+                    </p>
+                </div>
+            </div>
         </div>
-    </div>
     <script src="functions/functions.js"></script>
 </body>
 
