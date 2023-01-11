@@ -1,17 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
-*{
-    box-sizing: border-box;
-    font-weight: lighter;
+* {
+  box-sizing: border-box;
+  font-weight: lighter;
+  font-family: 'Poppins', sans-serif;
 }
+
 body {
-    background-color: black;
-    color: white;
-    padding: 10px;
-  }
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
 
 
-/* Create four equal columns that floats next to each other */
+/* Create four equal columns that floats next to each other - This applies for the 4 cards with personal details */
 .column {
   float: left;
   width: 25%;
@@ -32,13 +34,7 @@ body {
   }
 }
 
-img.profile-pic{
-  max-width: 100%;
-  height: auto;
-  border-radius: 50%;
-  opacity: 1;
-}
-
+/*Parameters for cards with details*/
 .card {
   perspective: 150rem;
   position: center;
@@ -62,7 +58,7 @@ img.profile-pic{
 .card-side.back {
   transform: rotateY(-180deg);
   background-color: #4158D0;
-  background-image: linear-gradient(43deg, #4158D0 0%,#C850C0 46%, #FFCC70 100%);
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
 }
 
 .card-side.front {
@@ -81,42 +77,51 @@ img.profile-pic{
 
 
 /* Front card content */
-.front-content{
+.front-content {
   font-size: 150%;
-  font-weight: lighter;
+  font-weight: 900;
   float: inline-end;
+}
+
+/* Details for first card*/
+img.profile-pic {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  opacity: 1;
 }
 
 /*Back card paragraph properties*/
 
-#full-name{
+#full-name {
   float: right;
   font-size: 35px;
-  font-weight: bold;
+  font-weight: 900;
 }
 
-.back-paragraph{
+.back-paragraph {
   top: 10rem;
   position: relative;
   text-align: justify;
 }
 
 
-/*Download container*/
+/*Buttons at the bottom "Download container"s*/
 
 .grid-container {
   display: grid;
-  grid-template-columns:auto;
+  grid-template-columns: auto;
   padding: 10px;
   justify-content: stretch;
 }
+
 .grid-item {
   padding: 20px;
   font-size: 30px;
   text-align: center;
 }
 
-.donwload-container{
+.donwload-container {
   position: absolute;
   display: flex;
   align-items: center;
@@ -124,18 +129,77 @@ img.profile-pic{
   margin: 10px;
 }
 
-.download-button{
+.download-button {
   background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
   border-radius: 8px;
   border-style: none;
   box-sizing: border-box;
   color: #FFFFFF;
-  font-size: 16px;  
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 900;
   height: 4rem;
   padding: 0 1.6rem;
   text-align: center;
 }
+
 .download-button:hover {
-  background-image: linear-gradient(43deg, #4158D0 0%,#C850C0 46%, #FFCC70 100%);
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+
+/*Form container properties*/
+.form-container {
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+  max-width: 250px;
+  padding: 1rem;
+  color: white;
+  border-width: 3px;
+  border-style: solid;
+  align-items: center;
+  border-image:
+    linear-gradient(to bottom,
+      #0093E9,
+      rgba(0, 0, 0, 0)) 1 100%;
+  ;
+}
+
+.form-container #submit {
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 300;
+  height: 2rem;
+  padding: 0 1.6rem;
+  text-align: center;
+  width: 100%;
+}
+
+.form-container input {
+  width: 100%;
+}
+
+.form-container #submit:hover {
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+
+.greetings {
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 300;
+  height: 4rem;
+  padding: 0 1.6rem;
+  text-align: center;
+  width: 100%;
+  border-image:
+    linear-gradient(to bottom,
+      #0093E9,
+      rgba(0, 0, 0, 0)) 1 100%;
+  ;
 }
